@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Symfony Live{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="display-2 py-3 mb-4 border-bottom text-center">Symfony Live</h1>
+
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
